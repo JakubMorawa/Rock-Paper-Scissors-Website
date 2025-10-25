@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1 class="header1">Rock Paper Scissors</h1>
+    <h2 class="header2">Choose Your Move</h2>
+    <div class="button-container">
+      <button onclick="playGame(CHOICES.ROCK.id)" class="game-button">&#9994;</button>
+      <button onclick="playGame(CHOICES.PAPER.id)" class="game-button">&#9995;</button>
+      <button onclick="playGame(CHOICES.SCISSORS.id)" class="game-button">&#9996;</button>
+    </div>
+    <div class="game-container">
+      <h2 class="opponent-text">Opponent's Move</h2>
+    </div>
+    <div class="game-container">
+      <p id="opponent" class="game-emoji">&#128127;</p>
+      <p id="opponentMove" class="game-emoji">&#129308;</p>
+    </div>
+    <div class="game-container">
+      <p id="outcome" class="outcome"></p>
+    </div>
+    <div class="game-container">
+      <p id="stats" class="stats"></p>
+  </body>
+</html>

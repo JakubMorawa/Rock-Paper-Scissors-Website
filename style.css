@@ -1,0 +1,140 @@
+:root {
+    --primary-color: rgb(0, 0, 105);
+    --background-color: #c6fcff;
+    --vignette-color: #00256b;
+    --text-shadow-color: #fff;
+    --opponent-text-shadow: #ff0000;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    min-height: 100vh;
+    box-shadow: inset 0 0 1000px var(--vignette-color);
+    padding-top: 20px;
+}
+
+.header1 {
+    color: var(--primary-color);
+    font-size: 60px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 0 var(--text-shadow-color), 
+                -2px 0 var(--text-shadow-color), 
+                0 2px var(--text-shadow-color), 
+                0 -2px var(--text-shadow-color),
+                1px 1px var(--text-shadow-color), 
+                -1px -1px var(--text-shadow-color), 
+                1px -1px var(--text-shadow-color), 
+                -1px 1px var(--text-shadow-color);
+    margin-bottom: 20px;
+}
+
+.header2 {
+    color: var(--primary-color);
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 0;
+    animation: wave 3s ease-in-out infinite alternate;
+    text-shadow: 2px 0 var(--text-shadow-color), 
+                -2px 0 var(--text-shadow-color), 
+                0 2px var(--text-shadow-color), 
+                0 -2px var(--text-shadow-color),
+                1px 1px var(--text-shadow-color), 
+                -1px -1px var(--text-shadow-color), 
+                1px -1px var(--text-shadow-color), 
+                -1px 1px var(--text-shadow-color);
+}
+
+@keyframes wave {
+    from { transform: translateY(-10px); }
+    to { transform: translateY(0); }
+}
+
+.opponent-text {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 0 var(--opponent-text-shadow),
+                -2px 0 var(--opponent-text-shadow),
+                0 2px var(--opponent-text-shadow),
+                0 -2px var(--opponent-text-shadow),
+                1px 1px var(--opponent-text-shadow),
+                -1px -1px var(--opponent-text-shadow),
+                1px -1px var(--opponent-text-shadow),
+                -1px 1px var(--opponent-text-shadow);
+    margin: 20px 0;
+}
+
+.game-emoji {
+    font-size: 80px;
+    margin: 0;
+    transition: transform 0.2s ease;
+}
+
+.stats {
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: var(--vignette-color);
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 20px 0;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.outcome {
+    font-size: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    transition: color 0.3s ease;
+    text-shadow: 2px 0 var(--text-shadow-color),
+                -2px 0 var(--text-shadow-color),
+                0 2px var(--text-shadow-color),
+                0 -2px var(--text-shadow-color),
+                1px 1px var(--text-shadow-color),
+                -1px -1px var(--text-shadow-color),
+                1px -1px var(--text-shadow-color),
+                -1px 1px var(--text-shadow-color);
+}
+
+.game-button {
+    background-color: rgb(92, 185, 216);
+    border: 3px solid rgb(0, 163, 212);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 70px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+}
+
+.game-button:hover {
+    transform: translateY(-5px);
+    background-color: rgb(128, 211, 238);
+}
+
+.game-emoji:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
